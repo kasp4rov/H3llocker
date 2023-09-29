@@ -5,7 +5,7 @@ Windows ransomware locker AES-250 in C# with integration with a discord webhook
 This locker was created for educational use and for security and intrusion tests. Do not use this locker for illegal use, I am not responsible for anything that happens using my code!
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/desktop.png" alt="Desktop" width="400"/>
+  <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/desktop.png" alt="Desktop" width="1000"/>
 </p>
 
 <h2>Summary</h2>
