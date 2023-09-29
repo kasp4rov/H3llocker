@@ -1,24 +1,25 @@
-<h2>H3llocker</h2>
-Windows ransomware locker AES-250 in C# with integration with a discord webhook
+## H3llocker
+Windows ransomware locker AES-250 implemented in C#, integrated with Discord webhook.
 
-<h2>Disclaimer</h2>
-This locker was created for educational use and for security and intrusion tests. Do not use this locker for illegal use, I am not responsible for anything that happens using my code!\
+## Disclaimer
+This locker was created for educational purposes and for security and intrusion tests. Do not use this locker for illegal activities. I am not responsible for any consequences that occur from using my code.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/desktop.png" alt="Desktop" width="1000"/>
+  <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/desktop.png" alt="Desktop" width="800"/>
 </p>
 
-<h2>Summary</h2>
-The Locker code, once executed, will encrypt personal files using AES encryption, where the decryption key will be sent to the attacker using a Discord Webhook, as well as warning that the person has successfully executed the file.\
+## Summary
+Once executed, the Locker code will encrypt personal files using AES encryption. The decryption key will be sent to the attacker via a Discord Webhook. The victim will also be notified about the successful execution of the file.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/webhook.png" alt="Discord" />
 </p>
 
-\<h2>Compiling</h2>
+## Compiling
 
-Running the command:  
-<pre>C:\H3llocker> dotnet restore</pre>
+To compile, run the following command: 
+<pre>C:\H3llocker> dotnet restore </pre>
+
 Import the code using Visual Studio and compile.
 
-![VS](https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/image.png)
+![Visual Studio](https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/image.png)
