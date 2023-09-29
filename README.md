@@ -5,14 +5,14 @@ Windows ransomware locker AES-250 in C# with integration with a discord webhook
 This locker was created for educational use and for security and intrusion tests. Do not use this locker for illegal use, I am not responsible for anything that happens using my code!
 
 <p align="center">
-  <img src="https://raw.githubusentent.com/kasp4rov/H3llocker/main/images/desktop.png" alt="Desktop" width="200"/>
+  <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/desktop.png" alt="Desktop" width="400"/>
 </p>
 
 <h2>Summary</h2>
 The Locker code, once executed, will encrypt personal files using AES encryption, where the decryption key will be sent to the attacker using a Discord Webhook, as well as warning that the person has successfully executed the file.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/webhook.png" alt="Discord" width="200"/>
+  <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/webhook.png" alt="Discord" />
 </p>
 
 <h2>Compiling</h2>
