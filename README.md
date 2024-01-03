@@ -1,5 +1,5 @@
 ## H3llocker
-Windows ransomware locker AES implemented in C#, integrated with.
+Windows ransomware locker AES implemented in C#.
 
 ## Disclaimer
 This locker was created for educational purposes and for security and intrusion tests. Do not use this locker for illegal activities. I am not responsible for any consequences that occur from using my code.
