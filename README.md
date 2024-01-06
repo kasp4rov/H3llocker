@@ -11,10 +11,6 @@ This locker was created for educational purposes and for security and intrusion 
 ## Summary
 Once executed, the Locker code will encrypt personal files using AES encryption. The decryption key will be sent to the attacker via web request. The victim will also be notified about the successful execution of the file.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/kasp4rov/H3llocker/main/images/webhook.png" alt="IMG" />
-</p>
-
 ## Compiling
 
 To compile, run the following command: 
